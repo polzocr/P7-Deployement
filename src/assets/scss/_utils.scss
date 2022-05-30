@@ -1,0 +1,45 @@
+$primary-color: #FD2D01;
+$secondary-color: #FFD7D7;
+$tertiary-color: #091F43;
+$color: #102241;
+
+@mixin mobiles{
+    @media all and (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin not-mobiles{
+    @media all and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin tablets{
+    @media all and (min-width: 768px) and (max-width:1023px){
+        @content;
+    }
+}
+
+@mixin all-desktop{
+    @media all and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin small-desktop{
+    @media all and (min-width: 1024px) and (max-width:1439px){
+        @content;
+    }
+}
+
+@mixin normal-desktop{
+    @media all and (min-width: 1440px) and (max-width:1663px){
+        @content;
+    }
+}
+@mixin big-desktop{
+    @media all and(min-width: 1664px){
+        @content;
+    }
+}
